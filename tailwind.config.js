@@ -11,11 +11,8 @@ module.exports = {
         orange: '#ef6b48',
         new: '#dd501d',
         new1: '#FFA94D',
+        color1:'#F2F4F7FF'
       },
-      width:{
-        '400' :'400px',
-        '500' :'500px',
-      }
     },
   },
   plugins: [],
