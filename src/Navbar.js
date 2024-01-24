@@ -4,7 +4,7 @@ function Navbar(){
     return(
         <>
          {/* Sidebar */}
-    <div className="flex h-screen">
+    <div className="inline-flex h-screen">
         <div className="flex h-full w-24  border border-gray-400 ">
             
             <div className="flex flex-col items-center  h-full">
