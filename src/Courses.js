@@ -8,7 +8,7 @@ function Courses(){
         <div className='flex'>
         <Navbar/> 
         
-        <div className="flex-1 flex flex-col overflow-hidden">
+        <div className="flex-1 flex flex-col overflow-hidden margin-left-from-navber">
         
         <div className='p-4   flex items-center '>
         <div className="rounded-full bg-gray-300 p-2"><i class="fa-solid fa-arrows-rotate text-gray-600"></i></div>
@@ -25,7 +25,11 @@ function Courses(){
         
         </div>
         <div className='p-4  courses-navbar flex items-center'>
-            idhr lgenge logos
+            <ul className="flex justify-center space-x-24">
+                <li><i class="fa-solid fa-graduation-cap explore-courses-button"></i>Courses</li>
+                <li><i class="fa-solid fa-bolt trending-icon"></i>Trending</li>
+                <li><i class="fa-solid fa-crown premium-courses-button-on-courses-page"></i>Premium Courses</li>
+            </ul>
         </div>
         
         </div>

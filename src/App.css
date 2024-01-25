@@ -1,5 +1,18 @@
-
-
+.premium-courses-button-on-courses-page{
+  color: #636363;
+  margin-right: 5px;
+}
+.explore-courses-button{
+  color: #636363;
+  margin-right: 5px;
+}
+.margin-left-from-navber{
+  margin-left: 94.4px;
+}
+.trending-icon{
+  color: #636363;
+  margin-right: 5px;
+}
 .search-bar-element-of-courses-page {
     display: flex;
     line-height: 28px;
