@@ -12,7 +12,8 @@ const StudentsCardList = () => {
 
   return (
     <div className="w-max bg-white rounded-2xl shadow-md shadow-gray-400 p-5 ">
-  <h2 className="text-2xl font-semibold mb-4 ml-5">Students</h2>
+  <h2 className="text-2xl font-semibold mb-6 ml-5 inline">Assigned Learners</h2>
+  <h2 className="text-xl  mt-0 text-blue-700 float-end">view all</h2>
   <div className="flex flex-wrap">
     {studentData.map((student) => (
       <div key={student.id} className="bg-white p-8 rounded-md shadow-md shadow-gray-400 mb-4 mx-4 ">
