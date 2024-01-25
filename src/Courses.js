@@ -8,7 +8,7 @@ function Courses(){
         <div className='flex'>
         <Navbar/> 
         
-        <div className="flex-1 flex flex-col overflow-hidden margin-left-from-navber">
+        <div className="flex-1 flex flex-col overflow-hidden margin-left-from-navbar">
         
         <div className='p-4   flex items-center '>
         <div className="rounded-full bg-gray-300 p-2"><i class="fa-solid fa-arrows-rotate text-gray-600"></i></div>

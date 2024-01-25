@@ -7,9 +7,9 @@ import StudentsCardList from './StudentsCardList';
 function Dashboard() {
   return (
       <>
-          <div className="flex bg-color1">
+          <div className="flex bg-color1 ">
               <Navbar />
-              <div className="flex-1 flex flex-col overflow-hidden">
+              <div className="flex-1 flex flex-col overflow-hidden margin-left-from-navbar">
 
                   <div className="p-4 border border-gray-400 flex items-center">
 
