@@ -7,7 +7,7 @@ import StudentsCardList from './StudentsCardList';
 function Dashboard() {
   return (
       <>
-          <div className="flex bg-color1 ">
+          <div className="flex bg-color1">
               <Navbar />
               <div className="flex-1 flex flex-col overflow-hidden margin-left-from-navbar">
 
@@ -165,7 +165,43 @@ function Dashboard() {
   </div>
 </div>
 <div>
-hello
+<div class="bg-white shadow-md shadow-gray-400 rounded-3xl p-5 w-96 ml-10 mt-5">
+  <div class="flex justify-between items-center mb-4">
+    <h1 class="font-bold text-slate-900 text-2xl">My classes</h1>
+    <div className="flex space-x-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2M6.17 5a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-7.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 0 1 0-2zM15 11a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-2.83 0a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-1.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 1 1 0-2zM9 17a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-2.83 0a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-7.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 1 1 0-2z"/></svg>
+    </div>
+  </div>
+  <div class="mb-4  shadow-gray-400 shadow-md rounded-lg p-4">
+    <h2 class="text-md font-bold text-slate-900  mb-2">React</h2>
+    <p class="text-sm mb-2 font-semibold  text-gray-600 ">I need more lessons on hooks . What study materials can you recommend to me?</p>
+    <div class="flex justify-between items-center mt-5">
+    <div className="flex space-x-2 items-center">
+    <img className="w-8 h-8 rounded-full" src="https://placekitten.com/200/300"></img>
+    <p class="text-base font-semibold">Dustin Cox  </p>
+    </div>
+    <div className="flex space-x-1 items-center">
+    <p class="text-xs" >09.11.23</p>
+   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M14 22h-4c-3.771 0-5.657 0-6.828-1.172C2 19.657 2 17.771 2 14v-2c0-3.771 0-5.657 1.172-6.828C4.343 4 6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172C22 6.343 22 8.229 22 12v2c0 3.771 0 5.657-1.172 6.828c-.653.654-1.528.943-2.828 1.07M7 4V2.5M17 4V2.5M21.5 9H10.75M2 9h3.875"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></g></svg>
+    </div>
+    </div>
+  </div>
+  <div class="mb-4 shadow-gray-400 shadow-md rounded-lg p-4 ">
+    <h2 class="text-md font-bold text-slate-900  mb-2">Tailwincss</h2>
+    <p class="text-sm mb-2 font-semibold  text-gray-600 ">I'm still having issues with setting up tailwind in my pc can you help me with that?</p>
+    <div class="flex justify-between items-center mt-5">
+    <div className="flex space-x-2 items-center ">
+    <img className="w-8 h-8 rounded-full" src="https://placekitten.com/200/400"></img>
+    <p class="text-base font-semibold">Jeff poter </p>
+    </div>
+    <div className="flex space-x-1 items-center">
+    <p class="text-xs" >12.11.23</p>
+   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M14 22h-4c-3.771 0-5.657 0-6.828-1.172C2 19.657 2 17.771 2 14v-2c0-3.771 0-5.657 1.172-6.828C4.343 4 6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172C22 6.343 22 8.229 22 12v2c0 3.771 0 5.657-1.172 6.828c-.653.654-1.528.943-2.828 1.07M7 4V2.5M17 4V2.5M21.5 9H10.75M2 9h3.875"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></g></svg>
+    </div>
+    </div>
+  </div>
+</div>
 </div>
 
                           </div>
@@ -177,4 +213,3 @@ hello
 }
 
 export default Dashboard;
-

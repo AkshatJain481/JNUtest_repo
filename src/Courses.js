@@ -26,9 +26,9 @@ function Courses(){
         </div>
         <div className='p-4  courses-navbar flex items-center'>
             <ul className="flex justify-center space-x-24">
-                <li><i class="fa-solid fa-graduation-cap explore-courses-button"></i>Courses</li>
-                <li><i class="fa-solid fa-bolt trending-icon"></i>Trending</li>
-                <li><i class="fa-solid fa-crown premium-courses-button-on-courses-page"></i>Premium Courses</li>
+                <li className="cursor-pointer courses-page-below-searchbar-button"><i class="fa-solid fa-graduation-cap explore-courses-button "></i>Courses</li>
+                <li className="cursor-pointer courses-page-below-searchbar-button"><i class="fa-solid fa-bolt trending-icon"></i>Trending</li>
+                <li className="cursor-pointer courses-page-below-searchbar-button"><i class="fa-solid fa-crown premium-courses-button-on-courses-page"></i>Premium Courses</li>
             </ul>
         </div>
         

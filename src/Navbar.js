@@ -11,7 +11,7 @@ function Navbar(){
                 
             <div>
             <img className="w-24 h-24" src="/logo69.png" />
-</div>
+    </div>
 
                  {/* Sidebar Buttons */}
                 <div className="mt-6 space-y-4">

@@ -6,6 +6,7 @@
   color: #636363;
   margin-right: 5px;
 }
+
 .margin-left-from-navbar{
   margin-left: 94.4px;
 }
@@ -13,6 +14,22 @@
   color: #636363;
   margin-right: 5px;
 }
+.courses-page-below-searchbar-button:hover .explore-courses-button{
+color: #de6f3d;
+
+}
+.courses-page-below-searchbar-button:hover .trending-icon{
+  color: #de6f3d;
+  
+  }
+  .courses-page-below-searchbar-button:hover .premium-courses-button-on-courses-page{
+    color: #de6f3d;
+    
+    }
+    .courses-page-below-searchbar-button:hover {
+      color: #de6f3d;
+      
+      }
 .search-bar-element-of-courses-page {
     display: flex;
     line-height: 28px;
