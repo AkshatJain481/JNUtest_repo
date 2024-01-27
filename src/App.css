@@ -1,3 +1,10 @@
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 .premium-courses-button-on-courses-page{
   color: #636363;
   margin-right: 5px;
@@ -124,4 +131,107 @@ color: #de6f3d;
     fill: #f09f33;
     transition: 0.3s ease;
   }
+  .course-cards-common{
+    height: 129px;
+    width: 129px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.347);
+    
+  }
+  .fa-palette, .fa-robot, .fa-film, .fa-images, .fa-network-wired, .fa-wave-square, .fa-briefcase, .fa-book{
+    color: #636363;
+    font-size: 1.5rem;
+  }
+  .courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course{
+    display: inline-flex;
+    
+    font-size: 14px;
+    font-family: Roboto, Arial, sans-serif;
+    height: 20px;
+    width: 408px;
   
+   font-weight: 400;
+   color: #606060;
+  }
+  .dot:before {
+    content: "•";
+    margin: 0 0px;
+    color: #606060;
+}
+.fa-dollar-sign{
+  margin-top: 3.5px ;
+  color: #606060;
+}
+.button-for-adding-courses {
+  border: 2px solid #fbcc24;
+  background-color: #fbb724;
+  border-radius: 0.9em;
+  padding: 0.8em 1.2em 0.8em 1em;
+  transition: all ease-in-out 0.2s;
+  font-size: 16px;
+ }
+ 
+ .button-for-adding-courses .inner-span-element-in-button-for-adding-courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+ }
+ 
+ .button-for-adding-courses:hover {
+  background-color: #e27800;
+ }
+ .teacher-courses-page-searchBox {
+  display: flex;
+  max-width: 230px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #2f3640;
+  border-radius: 50px;
+  position: relative;
+}
+
+.teacher-courses-page-searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #f5c62a 0%, #fd7600 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+/*hover effect*/
+.teacher-courses-page-searchButton:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+/*button pressing effect*/
+.teacher-courses-page-searchButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.teacher-courses-page-searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 15px 15px 15px 15px;
+}
+.fa-border-all{
+  color: #606060;
+
+}
+.bolt-for-free-courses{
+  color: #606060;
+}
