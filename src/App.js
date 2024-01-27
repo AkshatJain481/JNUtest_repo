@@ -7,8 +7,7 @@ function App() {
   return (
     <>
     
-    <Add_Course/>
-    
+    <Courses/>
     </>
   );
 }

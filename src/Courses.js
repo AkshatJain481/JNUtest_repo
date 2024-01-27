@@ -1,7 +1,24 @@
+import { useEffect, useState } from 'react';
 import React from "react";
 import Navbar from './Navbar';
+import axios from "axios";
+
 
 function Courses(){
+    const [Data, setData] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const response = await axios.get('http://localhost:5000/api/users');
+            setData(response.data);
+          } catch (error) {
+            console.error('Error fetching data:', error);
+          }
+        };
+    
+        fetchData();
+      }, []);
 
     return(
         <>
@@ -44,82 +61,20 @@ function Courses(){
         </div>
         <div className="ml-auto mr-auto">
         <div className=" flex space-x-10" >
-        <div className="each-course-card-image-and-desc max-w-72">
+        {/* <div className="each-course-card-image-and-desc max-w-72">
             <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
             <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
             <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
             
-        </div>
-        <div className="each-course-card-image-and-desc max-w-72">
-            <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
-            <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
-            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
+        </div> */}
+        {Data.map((data, index) => (
+            <div className="each-course-card-image-and-desc max-w-72">
+            <iframe src={data.VideoURL}  className="min-h-52 rounded-2xl"  width={280} />
+            <p className="font-semibold mt-2">{data.Title}</p>
+            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i> {data.Price} <span class="dot ml-4"> <span className="ml-2">{data.Name}</span></span></div>
             
         </div>
-        <div className="each-course-card-image-and-desc max-w-72">
-            <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
-            <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
-            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
-            
-        </div>
-        <div className="each-course-card-image-and-desc max-w-72">
-            <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
-            <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
-            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
-            
-        </div>
-        </div>
-        <div className="mt-10 flex space-x-10" >
-        <div className="each-course-card-image-and-desc max-w-72">
-            <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
-            <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
-            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
-            
-        </div>
-        <div className="each-course-card-image-and-desc max-w-72">
-            <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
-            <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
-            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
-            
-        </div>
-        <div className="each-course-card-image-and-desc max-w-72">
-            <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
-            <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
-            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
-            
-        </div>
-        <div className="each-course-card-image-and-desc max-w-72">
-            <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
-            <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
-            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
-            
-        </div>
-        </div>
-        <div className="mt-10 flex space-x-10" >
-        <div className="each-course-card-image-and-desc max-w-72">
-            <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
-            <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
-            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
-            
-        </div>
-        <div className="each-course-card-image-and-desc max-w-72">
-            <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
-            <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
-            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
-            
-        </div>
-        <div className="each-course-card-image-and-desc max-w-72">
-            <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
-            <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
-            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
-            
-        </div>
-        <div className="each-course-card-image-and-desc max-w-72">
-            <img src='/course_image.jpeg' className="min-h-52 rounded-2xl"  width={280} />
-            <p className="font-semibold mt-2">Complete Design Thinking  Masterclass</p>
-            <div class="courses-sold-and-the-teacher-of-the-course-below-the-desc-of-course "><i class="fa-solid fa-dollar-sign"></i>523k Sales <span class="dot ml-4"> <span className="ml-2">Laura Pickel</span></span></div>
-            
-        </div>
+        ))}
         </div>
         </div>
         </div>
